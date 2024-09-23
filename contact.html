@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://kit.fontawesome.com/5cc2d2f620.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300;1,400&family=Roboto:ital,wght@0,100;0,500;0,400;1,100;1,700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/media-quaries.css">
+  <link rel="shortcut icon" href="./img/usumFavicon.ico" type="image/x-icon">
+  <title>United Idi Mardi</title>
+</head>
+<body>
+  <div id="container">
+    
+    <header>
+      <div class="top-bar">
+        <div class="address-section">
+          <div>
+            <small><span class=""><i class="fas fa-map-marker-alt icon"></i></span><span class="icon-text">Lekhnath-7, Pokhara Airport</span>
+          </div>
+        </div>
+
+        <div class="social-icon">
+          <div class="social-icon-box first">
+          <a class="social-link link" href="tel:+234-9074057222"><i class="fa fa-phone"></i>
+            <span class="icon-text"><small>
+              +977-61-465806, 527807, 462774</small></span></a>
+            </div>
+            <div class="social-icon-box">
+            <a href="https://api.whatsapp.com/send?phone=2349074057222" 
+            target="_blank" class="social-link link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#" class="logo-link link">
+            <img src="./img/logo.png" alt="logo" class="logo_img">
+          </a>
+        </div>
+        <ul class="nav_list_box">
+          <li class="nav-list">
+            <a href="index.html" class="nav-link link">HOME</a>
+          </li>
+          <li class="nav-list">
+            <a href="about.html" class="nav-link link">ABOUT</a>
+          </li>
+          <li class="nav-list">
+            <a href="news.html" class="nav-link link">NEWS</a>
+          </li>
+          <li class="nav-list">
+            <a href="contact.html" class="current nav-link link">CONTACT</a>
+          </li>
+        </ul>
+        <div class="lightbulb-container">
+          <img id="lightbulb" src="img/bulb-off.png" alt="Light Bulb" width="50">
+        </div>
+        </nav>
+      <div class="mobile_menu">
+        <div class="mobile_bar">
+          <div class="menu_bar">
+            <i title="menu" class="fa fa-bars"></i>
+          </div>
+          <div class="close_bar">
+            <i title="close" class="fa fa-times"></i>
+          </div>
+          </div>
+        </div>
+    </header>
+    <section class="hero-section about-us-section header" id="hero_section">
+      <h1>
+        Contact Us
+      </h1>
+      <div class="about-us-typed-text">
+        <p>
+          <a href="index.html" class="link">Home</a> / <a href="contact.html" class="link">Contact</a> / About
+        </p>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="quote-section">
+        <map name="">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4574.7031798032285!2d83.88146665313401!3d28.370726216668253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995f31683343c2b%3A0xb04d9e1d62eb7f30!2sUpper%20Mardi%20Hydro%20Power!5e1!3m2!1sen!2snp!4v1725373733723!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://www.embedgooglemap.net">use google maps on website</a>
+            </div>
+          </div>
+        </map>
+        <div class="quote-section-typed-text">
+        <div class="quote-card">
+          <div class="headings">
+          <h4>
+            Contact Us
+          </h4>
+          <h1> Feel Free To Contact Us.</h1>
+        </div>
+        <p>
+          Using this form you agree with storage and handling of your data by this website.
+        </p>
+      </div>
+      <div class="form-section">
+          <form id="contactForm">
+              <input type="text" class="form-content" name="name" placeholder="Your Name" required>
+              <input type="email" class="form-content" name="email" id="email" placeholder="Your Email" required>
+              <input type="tel" class="form-content" name="tel" id="tel" placeholder="Your Mobile" required>
+              <select name="service" id="select" required>
+                  <option value="" selected disabled>Select A service</option>
+                  <option class="option" value="Inquiry">Inquiry</option>
+                  <option class="option" value="Suggestion">Suggestion</option>
+              </select>
+              <textarea class="form-content" name="message" id="text" cols="65" rows="5" placeholder="Special Note" required></textarea>
+              <button class="submit-btn" type="submit">Submit</button>
+          </form>
+      </div>
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Query sent successfully');
+            this.reset();
+        });
+    </script>
+      </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="section2-content">
+        <div class="section2-first-column column">
+          <h2>
+            <span class="figure"><u>Email</u></span>
+          </h2>
+          <h3>
+            <br>unitedidimardi7mw@gmail.com          
+          </h3>
+        </div>
+        <div class="section2-second-column column">
+          <h2>
+            <span class="figure"><u>Branch Office</u></span>
+          </h2>
+          <h3>
+            <br>Lekhnath -7 Pokhara Airport
+            <br>
+            Tel: +977-61-465806,527807
+            <br>
+            Fax: +977-06-520592,464345
+          </h3>
+        </div>
+        <div class="section2-third-column column">
+          <h2>
+            <span class="figure"><u>Branch Office</u></span>
+          </h2>
+          <h3>
+            <br>Kupondole -1, Lalitpur
+            <br>
+            Tel: +977 -1- 5012027
+            <br>
+            Fax: +977-1- 5012066
+          </h3>
+        </div>
+        <div class="section2-forth-column column">
+          <h2>
+            <span class="figure"><u>Business hours</u></span>
+          </h2>
+          <h3>
+            <br>Sunday – Friday: 10AM – 5PM
+          </h3>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="footer-content">
+        <div class="footer-text-card1">
+          <div class="first-column column">
+            <h3 class="sub-title">
+              Address
+            </h3>
+            <div>
+              <span class=""><i class="fas fa-map-marker-alt icon"></i></span><span class="icon-text">Pokhara Lekhnath Metropolitan City, Ward No 17, Ghari Patan, Kashki.</span>
+            </div>
+            <div>
+              <a href="tel:+2349074057222" class="link"><span class=""><i class="fa fa-phone"></i></span><span class="icon-text">+977-61-5705592</span></a>
+          </div>
+          <div>
+            <a href="mailto:unitedidimardi7mw@gmail.com" class="link"><span class=""><i class="far fa-envelope"></i></span><span class="icon-text">unitedidimardi7mw@gmail.com</span></a>
+          </div>
+          </div>
+          <div class="second-column column">
+            <h3 class="sub-title">
+              Quick Links
+            </h3>
+            <div>
+            <ul>
+            <li><a href="about.html" class="nav-link link"><span class=""><i class="fas fa-angle-right"></i></span><span class="second-column-nav-link">About Us</span></a></li>
+            <li><a href="contact.html" class="nav-link link"><span class=""><i class="fas fa-angle-right"></i></span><span class="second-column-nav-link">Contact Us</span></a></li>
+            <li><a href="news.html" class="nav-link link"><span class=""><i class="fas fa-angle-right"></i></span><span class="second-column-nav-link">News</span></a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="third-column column">
+            <h3 class="sub-title">
+              Gallery
+            </h3>
+            <div>
+              <img src="img/carousel-1.jpg" alt="project Gallery" class="project-photo">
+              <img src="img/carousel-2.jpg" alt="project Gallery" class="project-photo">
+              <img src="img/carousel-3.jpg" alt="project Gallery" class="project-photo">
+            </div>
+          </div>
+        </div>
+        <div class="footer-text-card2">
+          <p>
+            &copy; 2022-2023 All Right Researved.
+          </p>
+          <p>Designed by: <a href="#" class="link">Seti World.</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>

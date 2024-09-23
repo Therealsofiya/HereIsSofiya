@@ -1,0 +1,389 @@
+@media (max-width: 700px) {
+  html {
+    font-size: 10px;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #container {
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* style the header and navigation bar */
+  header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 200px;
+    padding: 0;
+    border-right: 0;
+    z-index: 2;
+
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .nav_list_box {
+    display: none;
+    margin-left: 200px;
+  }
+
+  .quote-btn {
+    display: none;
+  }
+
+  .navbar {
+    background-color: rgba(255, 255, 255, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    visibility: hidden;
+    transition: transform 500ms ease-in-out;
+  }
+
+  .open_nav .navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    overflow: hidden;
+    transform: translateX(0%);
+  }
+
+  .open_nav .nav_list_box {
+    display: none;
+    display: block;
+    z-index: 2;
+  }
+
+  .nav_list_box {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 3;
+    position: absolute;
+    left: -50%;
+    top: 4rem;
+  }
+
+  .navbar .nav-list .nav-link {
+    font-size: 2rem;
+  }
+
+  .navbar .nav-list .nav-link.link.current {
+    border-bottom: none;
+  }
+
+  .mobile_menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .mobile_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .3rem;
+  }
+
+  .menu_bar,
+  .close_bar {
+    z-index: 1;
+    padding: .5rem 1rem;
+    box-shadow: inset 1px 1px #32c36c, inset -1px -1px #32c36c;
+  }
+
+  .mobile_bar .fa {
+    font-size: 26px;
+    color: #333;
+    z-index: 10200;
+  }
+
+  .close_bar {
+    display: none;
+  }
+
+  .open_nav .menu_bar {
+    display: none;
+  }
+
+  .open_nav .close_bar {
+    display: block;
+  }
+
+  .quote-btn {
+    font-size: 1.4rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 20%;
+    padding: 0;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    gap: 0;
+    border-radius: 8px;
+    padding: 0 auto;
+  }
+
+  /* hero section */
+  .hero-section {
+    height: 100%;
+    padding: 2.4rem;
+    margin-top: 0rem;
+  }
+
+  .hero-content {
+    display: flex;
+    padding-right: 7.8rem;
+  }
+
+  .footer-content {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .footer-text-card1 {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin: 0;
+    padding-top: 1rem;
+  }
+
+  .second-column {
+    margin-left: 0;
+  }
+
+  .footer-social-icon .social-icon {
+    height: 2rem;
+    width: 2rem;
+    margin-right: .8rem;
+  }
+
+  .third-column div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    gap: 0;
+  }
+
+  .third-column div img {
+    margin: 0 .5rem;
+  }
+
+  .project-photo {
+    width: 40px;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  footer button[type="submit"] {
+    padding: 3px;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .footer-text-card2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section2-content {
+    flex-wrap: wrap;
+    margin-left: 2.4rem;
+  }
+
+  .section2-content .column {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  .section2-content .column h1 {
+    margin-bottom: 0;
+  }
+
+  .section2-content .column h1 .icon {
+    margin-right: .5rem;
+    padding: 10px;
+  }
+
+  .section3-content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding-bottom:
+      0;
+  }
+
+  .section3-content .card1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .section3-img {
+    width: 100%;
+  }
+
+  .card1 .paragraph2 {
+    font-size: 1.2rem;
+  }
+
+  .card1-list-items {
+    align-items: baseline;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+
+  .card1-list-icon {
+    margin-right: .5rem;
+  }
+
+  .section4-content {
+    margin-left: 1rem;
+  }
+
+  .section4-content-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .section1-content {
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    padding: 0;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .service-section-icon {
+    height: 4rem;
+    width: 4rem;
+    bottom: 8rem;
+  }
+
+  .section1-card-typed-text {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  .service-section2-content {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .card2-grp-content {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .projects-cards {
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+  }
+
+  .project-content-links ul {
+    gap: 1rem;
+  }
+
+  .quote-section {
+    flex-wrap: wrap;
+    padding-left: 2.4rem;
+  }
+
+  .quote-img {
+    width: 100%;
+  }
+
+  .quote-section-typed-text {
+    padding-left: 0;
+    font-size: 1.4rem;
+  }
+
+  .form-section form {
+    grid-template-columns: 1fr;
+  }
+
+  #text {
+    grid-column: auto;
+  }
+
+  .form-content {
+    margin-bottom: 2rem;
+  }
+
+  .form-grp {
+    flex-direction: column;
+  }
+
+  .form-input {
+    margin-top: 2rem;
+  }
+
+  .submit-btn {
+    margin-top: 1rem;
+  }
+
+  .testimonial-section {
+    width: 100%;
+  }
+
+  .carousal-content {
+    padding: 10px 0px 26px 50px;
+  }
+
+  .carousal-content img {
+    transform: scale(.6);
+    margin: 0px 0px -10px -15px;
+  }
+
+  .testimonial-name {
+    padding-top: 1rem;
+  }
+
+  .carousal-icons .fa-angle-left {
+    left: 20px;
+  }
+
+  .carousal-icons .fa-angle-right {
+    right: 20px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 20px 5px;
+  }
+
+  /* STICKY NAVIGATION */
+  .sticky header {
+    height: 40px;
+  }
+
+  .sticky .quote-btn {
+    display: none;
+  }
+}

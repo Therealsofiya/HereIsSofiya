@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://kit.fontawesome.com/5cc2d2f620.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300;1,400&family=Roboto:ital,wght@0,100;0,500;0,400;1,100;1,700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/media-quaries.css">
+  <link rel="shortcut icon" href="./img/usumFavicon.ico" type="image/x-icon">
+  <title>United Idi Mardi</title>
+  <style>
+    .gallery-section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .gallery-headings {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .testimonial-carousal {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+            margin-left: -200px;
+        }
+        .carousel-content {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-slide {
+            flex: 0 0 100%;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel-slide img {
+            max-width: 100%;
+            max-height: 300px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .carousel-button.prev {
+            left: 0;
+        }
+        .carousel-button.next {
+            right: 50;
+        }
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .dot_indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .dot_indicator.current_slide {
+            background: #333;
+        }
+</style>
+
+</head>
+<body>
+  <div id="container">
+    
+    <header>
+      <div class="top-bar">
+        <div class="address-section">
+          <div>
+            <small><span class=""><i class="fas fa-map-marker-alt icon"></i></span><span class="icon-text">Lekhnath-7, Pokhara Airport</span>
+          </div>
+        </div>
+
+        <div class="social-icon">
+          <div class="social-icon-box first">
+          <a class="social-link link" href="tel:+234-9074057222"><i class="fa fa-phone"></i>
+            <span class="icon-text"><small>
+              +977-61-465806, 527807, 462774</small></span></a>
+            </div>
+            <div class="social-icon-box">
+            <a href="https://api.whatsapp.com/send?phone=2349074057222" 
+            target="_blank" class="social-link link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" class="logo-link link">
+            <img src="./img/logo.png" alt="logo" class="logo_img">
+          </a>
+        </div>
+        <ul class="nav_list_box">
+          <li class="nav-list">
+            <a href="index.html" class="nav-link link">HOME</a>
+          </li>
+          <li class="nav-list">
+            <a href="about.html" class="nav-link link">ABOUT</a>
+          </li>
+          <li class="nav-list">
+            <a href="news.html" class="current nav-link link">NEWS</a>
+          </li>
+          <li class="nav-list">
+            <a href="contact.html" class="nav-link link">CONTACT</a>
+          </li>
+        </ul>
+        <div class="lightbulb-container">
+          <img id="lightbulb" src="img/bulb-off.png" alt="Light Bulb" width="50">
+        </div>
+        </nav>
+      <div class="mobile_menu">
+        <div class="mobile_bar">
+          <div class="menu_bar">
+            <i title="menu" class="fa fa-bars"></i>
+          </div>
+          <div class="close_bar">
+            <i title="close" class="fa fa-times"></i>
+          </div>
+          </div>
+        </div>
+    </header>
+    <!--hero section-->
+
+    <section class="hero-section services-section header" id="hero_section">
+      <h1>
+        News/Updates
+      </h1>
+      <div class="header-typed-text">
+        <p>
+          <a href="index.html" class="link">Home</a> / <a href="contact.html" class="link">Contact</a> / service
+        </p>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="gallery-headings">
+          <h1>News Portion</h1>
+      </div>
+      <div class="testimonial-carousal">
+          <div class="carousel-content">
+              <div class="carousel-slide">
+                  <img src="img/Report2080_81.png" alt="Report 2080_81">
+              </div>
+              <div class="carousel-slide">
+                  <img src="img/2nd_Quarterly_Report.png" alt="2nd Quarterly Report">
+              </div>
+              <div class="carousel-slide">
+                  <img src="img/14th_AGM_Notice.png" alt="14th AGM Notice">
+              </div>
+          </div>
+          <button class="carousel-button prev">&lt;</button>
+          <button class="carousel-button next">&gt;</button>
+      </div>
+      <div class="carousel-indicators"></div>
+  </section>
+
+  <!--
+      <section class="testimonial-section">
+      <div class="testimonial">
+        <div class="testimonial-headings">
+          <h4>
+            Gallery
+          </h4>
+          <h1>
+            Glimpse of Us!
+          </h1>
+        </div>
+        <div class="testimonial-carousal">
+          <div class="carousal-content">
+            <img src="img/Report2080_81.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content">
+            <img src="img/2nd_Quarterly_Report.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content">
+            <img src="img/14th_AGM_Notice.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content">
+            <img src="img/Unaudited_Financial_Statements.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/4th_Quarterly_Report.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/3rd_Quarterly_Report.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/2nd_Quarterly_Report_2079.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/Dividend_Notice_UIMRBH.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/13th_Annual_General_Meeting_Notice_UMRH.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/1st_Quarter_Report_of_United_Idimardi_&_RB_Hydropower_Ltd.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/Minutes_of_12th_AGM_1.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/3rd_Quarterly_Report_FY_2078-79_Ended_30th_Chaitra_2078.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/12th_AGM_&_Book_Closure_Notice.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/2nd_Quarterly_Report_FY_2078-79_Ended_30th_Poush_2078.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/1st_Quarterly_Report_FY_2078-79_Ended_31st_Ashoj_2078.jpg" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/4th_Quarter_Report_of_United_Idi_Mardi_&_RB_Hydropower_Ltd.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/3rd_Quarterly_Report_FY_2077-78_Ended_31st_Chaitra_2077.jpg" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/Minutes_of_11th_AGM_1.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/11th_Annual_Report_FY_2076-2077_1.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/11th_AGM_Notice.jpg" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/2nd_Quarterly_Report_FY_2077-78_Ended_29th_Poush_2077.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/शेयर_सूचीकरण_गरिएको_सूचना.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/स्थानीयतर्फको_शेयर_बाँडफाड_तालिका.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/Issue_Open_Notice_FH11_updated_cs.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/Public_Abhwanpatra_FH11.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/Allotment_Notice_FH11.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/downloadIssue_Closed_Notice_FH11_1022.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/Time_Ext_Notice_FH11.png" alt="costomer photo" class="img" />
+          </div>
+          <div class="carousal-content"></div>
+            <img src="img/Updated_Announcement_IPO_UNITED_IDI_MARDI_AND_RB HYDROPOWER_LTD__Local_FH11.png" alt="costomer photo" class="img" />
+          </div>
+        <div class="carousal-icons"></div>
+          <i class="fas fa-angle-left icon left"></i>
+          <i class="fas fa-angle-right icon right"></i>
+        </div>
+        <div class="carousel_slide_indicator_box">
+          <div class="dot_indicator current_slide"></div>
+          <div class="dot_indicator"></div>
+          <div class="dot_indicator"></div>
+          <div class="dot_indicator"></div>
+        </div>
+      </div>
+    </div>
+    </section>
+    -->
+
+    <section class="service-section">
+      <div class="service-content">
+        <div class="heading">
+        <h4>
+          <strong>Recent News</strong>
+        </h4>
+        <h1>
+          <strong>Government related News</strong>
+        </h1>
+        </div>
+        <section class="section1">
+                <div class="project-content-links">
+          
+      </div>
+          <div class="section1-content">
+            <div class="section1-card card1">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+               <div class="section1-card-typed-text">
+                <h1><a href="img/Report2080_81.png" class="project-title link">3rd_Quarter_2080/81</a></h1>
+              <div class="service-typedtext_box">
+              <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                3rd Quarter Report FY 2080/81 Ended 30th Chaitra 2080
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card2">
+              <i class="fas fa-wind service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/2nd_Quarterly_Report.png" class="project-title link">2nd Quarterly Report</a></h1>
+              <div class="service-typedtext_box">
+              <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                2nd Quarterly Report FY 2080/81 Ended 29th Poush 2080
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card3">
+              <i class="fas fa-lightbulb service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/14th_AGM_Notice.png" class="project-title link">14th AGM Notice</a></h1>
+              <div class="service-typedtext_box">
+              <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                14th AGM Notice of United Idi Mardi & RB Hydropower Ltd
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card4">
+              <i class="fas fa-wind service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Unaudited_Financial_Statements.png" class="project-title link">Unaudited Financial Statements</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                Unaudited Financial Statements for the 1st Quarter, FY2080/2081 ended Asoj 2080
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/4th_Quarterly_Report.png" class="project-title link">4th Quarterly Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                4th Quarterly Report FY 2079/80 Ended 31st Ashad 2080
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/3rd_Quarterly_Report.png" class="project-title link">3rd Quarterly Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                3rd Quarterly Report
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/2nd_Quarterly_Report_2079.png" class="project-title link">2nd Quarterly Report 2079/80</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                2nd Quarterly Report FY 2079/80 Ended 30th Poush 2079
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Dividend_Notice_UIMRBH.png" class="project-title link">Dividend Notice</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                Cash Dividend Notice UNITED IDI MARDI AND RB HYDROPOWER LTD_ 2079_FH11
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="#" class="project-title link">13th Annual Meeting Minutes</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                13th Annual General Meeting Minutes
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/13th_Annual_General_Meeting_Notice_UMRH.png" class="project-title link">13th Annual General Meeting Notice</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                13th Annual General Meeting Notice of UMRH
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/1st_Quarter_Report_of_United_Idimardi_&_RB_Hydropower_Ltd.png" class="project-title link">1st Quarter Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                1st Quarter Report of United Idimardi & RB Hydropower Ltd
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Minutes_of_12th_AGM_1.png" class="project-title link">Minutes of 12th AGM</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                Minutes of 12th AGM
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/3rd_Quarterly_Report_FY_2078-79_Ended_30th_Chaitra_2078.png" class="project-title link">3rd Quarterly Report, FY 2078-79 Ended 30th Chaitra, 2078</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                3rd Quarterly Report, FY 2078-79 Ended 30th Chaitra, 2078
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/2nd_Quarterly_Report_FY_2078-79_Ended_30th_Poush_2078.png" class="project-title link">2nd Quarterly Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                2nd Quarterly Report, FY 2078-79 Ended 30th Poush 2078
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/1st_Quarterly_Report_FY_2078-79_Ended_31st_Ashoj_2078.jpg" class="project-title link">1st Quarterly Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                1st Quarterly Report, FY 2078-79 Ended 31st Ashoj, 2078
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/4th_Quarter_Report_of_United_Idi_Mardi_&_RB_Hydropower_Ltd.png" class="project-title link">4th Quarter Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                4th Quarter Report of United Idi Mardi & RB Hydropower Ltd.
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/3rd_Quarterly_Report_FY_2077-78_Ended_31st_Chaitra_2077.jpg" class="project-title link">3rd Quarterly Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                3rd Quarterly Report, FY 2077-78 Ended 31st Chaitra, 2077
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Minutes_of_11th_AGM_1.png" class="project-title link">Minutes of 11th AGM</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                Minutes of 11th AGM
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/11th_Annual_Report_FY_2076-2077_1.png" class="project-title link">11th Annual Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                11th Annual Report F/Y 2076/2077
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/11th_AGM_Notice.jpg" class="project-title link">11th AGM Notice</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                11th AGM Notice
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/2nd_Quarterly_Report_FY_2077-78_Ended_29th_Poush_2077.png" class="project-title link">2nd Quarterly Report</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                2nd Quarterly Report , FY 2077-78 Ended 29th Poush, 2077
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/शेयर_सूचीकरण_गरिएको_सूचना.png" class="project-title link">शेयर सूचीकरण गरिएको सूचना</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                शेयर सूचीकरण गरिएको सूचना
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/स्थानीयतर्फको_शेयर_बाँडफाड_तालिका.png" class="project-title link">स्थानीयतर्फको शेयर बाँडफाड तालिका</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                स्थानीयतर्फको शेयर बाँडफाड तालिका
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="#" class="project-title link">सर्वसाधारणतर्फको शेयर बाँडफाड तालिका</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                सर्वसाधारणतर्फको शेयर बाँडफाड तालिका
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Issue_Open_Notice_FH11_updated_cs.png" class="project-title link">Issue Open Notice_FH11_updated_cs</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                साधारण शयेरको सार्वजनिक निस्कासन तथा बिक्रि खुला बारेको सूचना।
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="#" class="project-title link">Public Abhwanpatra_FH11</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                सर्वसाधारण शेयर निष्कासनको लागी आहवान पत्र।
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Public_Abhwanpatra_FH11.png" class="project-title link">Public Abhwanpatra_FH11</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                सर्वसाधारण शेयर निष्कासनको लागी आहवान पत्र।
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Allotment_Notice_FH11.png" class="project-title link">Allotment Notice_FH11</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                आयोजना प्रभावित क्षेत्रका बासिन्दाहरुको निमित्त निष्कासन गरिएको साधारण शेयर बाँडफाँट सम्बन्धी सुचना ।
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/downloadIssue_Closed_Notice_FH11_1022.png" class="project-title link">Issue Closed Notice_FH11_1022</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                उद्योग प्रभावित क्षेत्रका बासिन्दाहरुको निमित्त साधारण शेयर निस्कासन तथा बिक्रि बन्द बारेको सूचना।
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Time_Ext_Notice_FH11.png" class="project-title link">Time Ext Notice_FH11</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                आयोजना प्रभावित क्षेत्रका वासिन्दाहरुको निमित्त साधारण शेयर निस्कासन तथा बिक्री खुल्लाको म्याद थप भएको मिती २०७७ आश्विन २२ गते अभियान दैनिकमा प्रकाशित सुचना।
+              </p>
+            </div>
+              </div>
+            </div>
+            <div class="section1-card card5">
+              <i class="fas fa-solar-panel service-section-icon"></i>
+              <div class="section1-card-typed-text">
+                <h1><a href="img/Updated_Announcement_IPO_UNITED_IDI_MARDI_AND_RB HYDROPOWER_LTD__Local_FH11.png" class="project-title link">शेयर निस्कासनको लागी आहवान पत्र</a></h1>
+              <div class="service-typedtext_box">
+                <button class="read-more"><span>Read More</span><i class="fa fas-arrow-left"></i></button>
+              <p class="service-typedtext">
+                Updated_Announcement IPO_UNITED IDI MARDI AND RB HYDROPOWER LTD__Local_FH11
+              </p>
+            </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="footer-content">
+        <div class="footer-text-card1">
+          <div class="first-column column">
+            <h3 class="sub-title">
+              Address
+            </h3>
+            <div>
+              <span class=""><i class="fas fa-map-marker-alt icon"></i></span><span class="icon-text">Pokhara Lekhnath Metropolitan City, Ward No 17, Ghari Patan, Kashki.</span>
+            </div>
+            <div>
+              <a href="tel:+2349074057222" class="link"><span class=""><i class="fa fa-phone"></i></span><span class="icon-text">+977-61-5705592</span></a>
+          </div>
+          <div>
+            <a href="mailto:unitedidimardi7mw@gmail.com" class="link"><span class=""><i class="far fa-envelope"></i></span><span class="icon-text">unitedidimardi7mw@gmail.com</span></a>
+          </div>
+          </div>
+          <div class="second-column column">
+            <h3 class="sub-title">
+              Quick Links
+            </h3>
+            <div>
+            <ul>
+            <li><a href="about.html" class="nav-link link"><span class=""><i class="fas fa-angle-right"></i></span><span class="second-column-nav-link">About Us</span></a></li>
+            <li><a href="contact.html" class="nav-link link"><span class=""><i class="fas fa-angle-right"></i></span><span class="second-column-nav-link">Contact Us</span></a></li>
+            <li><a href="news.html" class="nav-link link"><span class=""><i class="fas fa-angle-right"></i></span><span class="second-column-nav-link">News</span></a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="third-column column">
+            <h3 class="sub-title">
+              Gallery
+            </h3>
+            <div>
+              <img src="./img/gallery-1.jpg" alt="project Gallery" class="project-photo">
+              <img src="./img/gallery-2.jpg" alt="project Gallery" class="project-photo">
+              <img src="./img/gallery-3.jpg" alt="project Gallery" class="project-photo">
+            </div>
+          </div>
+        </div>
+        <div class="footer-text-card2">
+          <p>
+            &copy; 2022-2023 All Right Researved.
+          </p>
+          <p>Designed by: <a href="#" class="link">Seti World.</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
